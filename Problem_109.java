@@ -31,15 +31,15 @@ public class Problem_109 {
 
 	private void recu(int idx) {
 		if (idx == 3) {
-			int circleLine[] = new int[3];
+			int triLine[] = new int[3];
 			
 			for(int i=0; i<3; i++) {
-				circleLine[i] = arr[i];
+				triLine[i] = arr[i];
 			}
 			
-			Arrays.sort(circleLine);
+			Arrays.sort(triLine);
 			
-			if(circleLine[0] + circleLine[1] > circleLine[2])
+			if(triLine[0] + triLine[1] > triLine[2])
 				cnt++;
 			
 			return;
